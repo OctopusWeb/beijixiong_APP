@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+      	var em=null,map=null;
+			// H5 plus事件处理
+			function plusReady(){
+				// 确保DOM解析完成
+				if(!em||!window.plus||map){return};
+				map = new plus.maps.Map("map");
+			}
+			if(window.plus){
+				plusReady();
+			}else{
+				document.addEventListener("plusready",plusReady,false);
+			}
+			// DOMContentloaded事件处理
+			document.addEventListener("DOMContentLoaded",function(){
+				em=document.getElementById("map");
+				plusReady();
+			},false);
+      	
+      	window.onload = function(){
+      		
+      	}
+    </script>
+    <style type="text/css">
+    	*{margin: 0;padding: 0;font-family: "微软雅黑";font-weight: 400;}
+    	.mui-bar{height: 70px;box-shadow: none;}
+    	.mui-bar a{color: #44802d;margin-top: 20px;}
+    	.mui-bar h1{top: 20px;color: #44802d}
+    	
+    	.search{background: #c9c9ce;border-top: #7e7e7e 1px solid;height: 40px;margin-top: 70px;}
+    	.search input{width: 94%;margin-left: 3%;height: 30px;margin-top: 5px;border-radius: 5px;text-align: center;font-size: 14px;}
+    	.location{margin-top: 110px;height: 40px;border-top: 1px #b5b5b5 solid;}
+    	.location h1{font-size: 14px;color: #aaaaaa;line-height: 30px;float: left;margin-left: 3%;}
+    	.location h2{font-size: 14px;color: #ff9934;line-height: 30px;float: left;width: 70%;overflow: hidden;}
+    	.near{height: 30px;background: #ebebf1;top: 150px;border-bottom: 1px #c9c9ce solid;border-top: 1px #c9c9ce solid;}
+    	.near img{float: left;height: 18px;margin-top: 6px;margin-left: 2%;}
+    	.near h1{font-size: 14px;color: #666666;line-height: 20px;margin-left: 5px;float: left;}
+    	
+    	#map{width: 100%;height: 100%;position: fixed;margin-top: 180px;}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">配送中心</h1>
+	</header>
+	<div class="search mui-bar">
+		<input type="text" placeholder="搜索支持的配送中心"></input>
+	</div>
+	<div class="location mui-bar">
+		<h1>当前位置:</h1><h2>贵州省贵阳市南明区花果园大街</h2>
+	</div>
+	<div class="near mui-bar">
+		<img src="images/nearicon.jpg"/>
+		<h1>附近配送点</h1>
+	</div>
+	<div id="map">
+		地图加载中...
+	</div>
+</body>
+</html>

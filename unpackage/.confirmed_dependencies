@@ -1,0 +1,39 @@
+{
+  "index.html": {
+    "resources": [
+      "images/menu3.jpg",
+      "images/menu1.jpg",
+      "images/call.jpg",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "indexList.html",
+      "css/mui.min.css",
+      "images/menu2.jpg",
+      "images/menu4.jpg"
+    ],
+    "refer": [
+      "indexList.html",
+      "map.html"
+    ]
+  },
+  "indexList.html": {
+    "resources": [
+      "images/icon3.jpg",
+      "images/banner.jpg",
+      "images/icon4.jpg",
+      "images/icon6.jpg",
+      "images/icon2.jpg",
+      "images/icon1.jpg",
+      "images/imgshow113.jpg",
+      "images/imgshow112.jpg",
+      "images/top.png",
+      "images/imgshow33.jpg",
+      "images/icon5.jpg"
+    ]
+  },
+  "map.html": {
+    "resources": [
+      "images/nearicon.jpg"
+    ]
+  }
+}

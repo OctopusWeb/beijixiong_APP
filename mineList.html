@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+      	
+      	window.onload = function(){
+      		var icon = document.getElementsByClassName("content")[0].getElementsByTagName("li");
+      		var mineIcon = "mineIcon";
+ 			for(var i=0;i<icon.length;i++){
+ 				addEvent(icon,i);
+ 			}
+ 			function addEvent(cla,i){
+ 				var iconUrl = mineIcon+i;
+ 				cla[i].addEventListener("tap",function(){
+ 					mui.openWindow({
+ 						url:iconUrl+".html",
+ 						id:iconUrl
+ 					})
+ 				})
+ 			}
+      	}
+    </script>
+    
+    <style type="text/css">
+    	*{margin: 0;padding: 0;font-family: "微软雅黑";font-weight: 400;list-style: none;}
+    	body{background: #f6f6f6;}
+		
+		.mui-content .banner{width: 100%;float: left;position: relative;}
+		.mui-content .banner img{float: left;width: 100%;height: auto;}
+		.mui-content .banner .mineInfo{width: 100%;position: absolute;height: 100;}
+		.mui-content .banner .mineInfo img{width: 70px;height: 70px;position:absolute;margin-left: 50%;left: -35px;margin-top: 40px;}
+		.mui-content .banner .mineInfo .lv{width: 20px;height: 20px;left: 15px;margin-top: 85px;}
+		.mui-content .banner .mineInfo span{float: right;margin-right: 20px;margin-top: 30px;}
+		.mui-content .banner .mineInfo p{float: left;width: 100%;text-align: center;margin-top: 70px;color: #333;}
+		.mui-content .banner .mineInfo ul{width: 100%;float: left;height: auto;margin-top: 10%;}
+		.mui-content .banner .mineInfo ul li{width: 33%;float: left;border-right: 1px #ccc solid;}
+		.mui-content .banner .mineInfo ul li:last-child{border: none;}
+		.mui-content .banner .mineInfo ul li h1{width: 100%;font-size: 16px;text-align: center;line-height: 30px;}
+		.mui-content .banner .mineInfo ul li h2{width: 100%;font-size: 16px;text-align: center;color: #ff9933;}
+		.mui-content .content{width: 100%;position: relative;float: left;}
+		.mui-content .content img{float: left;width: 100%;height: auto;margin: 0;}
+		.mui-content .content ul{background: rgba(255,255,255,0.2);width: 100%;position: absolute;}
+		.mui-content .content ul li{float: left;width: 33%;border:1px #ccc solid;border-top: none;border-left: none;height: 150px;}
+		.mui-content .content ul li h1{width: 100%;font-size: 16px;line-height: 30px;text-align: center;}
+		.mui-content .content ul li img{width: 50%;margin: 20px 25%;}
+    </style>
+</head>
+<body>
+	<div class="mui-content">
+	    <div class="banner">
+	    	<img src="images/mineBg.jpg"/>
+	    	<div class="mineInfo">
+	    		<img src="images/mineHead.png"/>
+	    		<img src="images/lv0.png" class="lv"/>
+	    		<span class="mui-icon mui-icon-gear"></span>
+	    		<p>用户姓名叉叉</p>
+	    		<ul>
+	    			<li><h1>积分</h1><h2>0</h2></li>
+	    			<li><h1>余额</h1><h2>￥0.00</h2></li>
+	    			<li><h1>优惠券</h1><h2>0</h2></li>
+	    		</ul>
+	    	</div>
+	    </div>
+	    <div class="content">
+	    	<ul>
+	    		<li><img src="images/mineIcon1.png"/><h1>我的订单</h1></li>
+	    		<li><img src="images/mineIcon2.png"/><h1>待评价</h1></li>
+	    		<li><img src="images/mineIcon3.png"/><h1>会员等级</h1></li>
+	    		<li><img src="images/mineIcon4.png"/><h1>我的赠品</h1></li>
+	    		<li><img src="images/mineIcon5.png"/><h1>我的收藏</h1></li>
+	    		<li><img src="images/mineIcon6.png"/><h1>地址管理</h1></li>
+	    	</ul>
+	    </div>
+	</div>
+</body>
+</html>

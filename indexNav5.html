@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+    <style type="text/css">
+    	*{margin: 0;padding: 0;font-family: "微软雅黑";font-weight: 400;list-style: none;}
+    	body{background: #f6f6f6;}
+    	.mui-bar{height: 70px;box-shadow: none;border-bottom:1px #ccc solid ;}
+    	.mui-bar h1,a{top: 20px;color: #3c8c1e;}
+    	.mui-bar span{float:right;margin-right: 20px;margin-top: 20px;font-size: 30px;color: #3c8c1e;}
+    	
+    	.mui-content {width: 100%;float: left;overflow: hidden;}
+    	.mui-content .topup{width: 100%;float: left;height: 50px;background: #fff;border-bottom: 1px #ccc solid;position: relative;}
+    	.mui-content .topup:first-child{margin-top: 20px;}
+    	.mui-content .topup h1{width: 50%;text-align: center;color: #3c8c1e;font-size: 16px;height: 44px;line-height: 44px;border-bottom: 2px #3C8C1E solid;float: left;}
+    	.mui-content .topup h2{width: 50%;text-align: right;font-size: 14px;color: #bababa;float: left;line-height: 40px;padding-right: 10px;}
+    	.mui-content .topup h3{width: 80px;font-size: 16px;float: left;margin-left: 2%;line-height: 40px;}
+    	.mui-content .topup input{width: 100%;position: absolute;top: 10px;height: 30px;font-size: 14px;border: none;}
+    	.mui-content .topup button{width: 100px;float: right;border-radius:20px;background: #FF9933;margin-top: 10px;height: 30px;line-height: 15px;margin-right: 10px;}
+    	.mui-content .shopInfo{width: 100%;float: left;background: #fff;margin-top: 10px;}
+    	.mui-content .shopInfo .title{width: 100%;height: 30px;background: #90b13d;float: left;}
+    	.mui-content .shopInfo .title img{height: 20px;width: 20px;float: left;margin:5px 10px;}
+    	.mui-content .shopInfo .title h1{font-size: 14px;color: #fff;float: left;line-height: 20px;}
+    	.mui-content .shopInfo .title h2{float: left;font-size: 12px;line-height: 20px;color: #fff;margin: 5px;}
+    	.mui-content .shopInfo .shopImg{width: 100%;float: left;height: 120px;position: relative;}
+    	.mui-content .shopInfo .shopImg img{width: 100px;height: 100px;margin: 10px;float: left;}
+    	.mui-content .shopInfo .shopImg h2{width: 100%;color: #000;font-size: 14px;height: 32px;padding-left: 110px;position: absolute;overflow: hidden;
+    										line-height: 16px;top: 10px;}
+    	.mui-content .shopInfo .shopImg h3{position: absolute;color: #acacac;font-size: 14px;padding-left: 110px;top: 45px;}
+    	.mui-content .shopInfo .shopImg h4{position: absolute;color: #ff9933;font-size: 24px;padding-left: 110px;top: 80px;}
+    	.mui-content .shopInfo .shopImg button{position: absolute;background: #ff9933;width: 90px;border-radius: 20px;height: 30px;line-height: 15px;right: 10px;top: 80px;}
+    	.mui-content .danger{width: 100%;float: left;margin-top: 10px;padding-bottom: 10px;}
+    	.mui-content .danger p{width: 96%;float: left;font-size: 12px;margin: 0 2%;}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">余额充值</h1>
+	</header>
+	<div class="mui-content">
+	    <div class="topup">
+	    	<h1>在线充值</h1><h2>当前余额：12.00</h2>
+	    </div>
+	    <div class="topup">
+	    	<h3>充值金额</h3><input type="text" placeholder="输入整数金额" />
+	    	<button type="button" class="mui-btn mui-btn-warning">黄色</button>
+	    </div>
+	    <div class="shopInfo">
+	    	<div class="title">
+	    		<img src="images/lihe.jpg"/>
+	    		<h1>充值满2000元赠品</h1>
+	    		<h2>(卡劵充值除外)</h2>
+	    		<h1>赠品有效两周</h1>
+	    	</div>
+	    	<div class="shopImg">
+	    		<img src="images/imgshow33.jpg"/>
+	    		<h2>特大佳沛新西兰绿色奇异果（原装）+美国火舌果（充值后两周内有效）</h2>
+	    		<h3>组合装/箱</h3>
+	    		<h4>￥267.00</h4>
+	    		<button type="button" class="mui-btn mui-btn-warning">我要赠品</button>
+	    	</div>
+	    </div>
+	    <div class="shopInfo">
+	    	<div class="title">
+	    		<img src="images/lihe.jpg"/>
+	    		<h1>充值满2000元赠品</h1>
+	    		<h2>(卡劵充值除外)</h2>
+	    		<h1>赠品有效两周</h1>
+	    	</div>
+	    	<div class="shopImg">
+	    		<img src="images/imgshow33.jpg"/>
+	    		<h2>特大佳沛新西兰绿色奇异果（原装）+美国火舌果（充值后两周内有效）</h2>
+	    		<h3>组合装/箱</h3>
+	    		<h4>￥267.00</h4>
+	    		<button type="button" class="mui-btn mui-btn-warning">我要赠品</button>
+	    	</div>
+	    </div>
+	    <div class="danger">
+	    	<p>注*用户须知：</p>
+	    	<p>1.因水果季节性强，充值有礼赠品有领取有效期，充值完成后请尽快领取，充值完成后请尽快领取。</p>
+	    	<p>2.账户余额不能购买劵卡，使用充值卡充值不参与充值有礼赠品活动。</p>
+	    	<p>3.充值后若用户申请充值账户余额退款，获得赠品的用户需将赠品退回或扣除赠品实际价值的金额后退回相应余额。</p>
+	    </div>
+	</div>
+</body>
+</html>

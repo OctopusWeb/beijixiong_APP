@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+      	window.onload = function(){
+      		var me = document.getElementsByClassName("payme")[0];
+      		var friend = document.getElementsByClassName("payfriend")[0];
+      		document.getElementById("myswith").addEventListener("toggle",function(event){
+      		var subName = document.getElementById("subName");
+			  if(event.detail.isActive){
+			  	subName.innerHTML = "送朋友";
+			  	me.style.display = "none";
+			  	friend.style.display = "block";
+			  }else{
+			  	subName.innerHTML = "自购";
+			  	me.style.display = "block";
+			  	friend.style.display = "none";
+			  }
+			})
+      	}
+    </script>
+    <style type="text/css">
+    	*{margin: 0;padding: 0;font-family: "微软雅黑";font-weight: 400;list-style: none;}
+    	body{background: #f4f4f4;}
+    	
+    	.mui-content{width: 100%;float: left;overflow: hidden;}
+    	.mui-content .payfor{width: 100%;height: 40px;border: 1px #ccc solid;background: #fff;margin-top: 20px;}
+    	.mui-content h1{font-size: 16px;;line-height: 30px;margin-left: 2%;float: left;}
+    	.mui-content .payfor .mui-switch{float: right;width: 120px;margin-right: 10px;background: #dddddd;border: 1px #ccc solid;position: relative;height: 25px;margin-top: 5px;}
+    	.mui-content .payfor .mui-switch h1{font-size: 14px;line-height: 15px;width: 55px;text-align: center;color: #a4a4a4;}
+    	.mui-content .payfor .mui-switch .mui-switch-handle{width: 60px;height: 25px;margin-left: 1px;}
+    	.mui-content .payfor .mui-switch .mui-switch-handle h2{font-size: 14px;line-height: 15px;width: 100%;text-align: center;color: #3C8C1E;}
+    	
+    	.mui-content .payme{float: left;width: 100%;}
+    	.mui-content .payfriend{float: left;width: 100%;display: none;}
+    	.mui-content .payme .location{float: left;height: 150px;background: url(images/location.jpg) repeat-x;width: 100%;background-size:auto 100% ;margin-top: 20px;}
+    	.mui-content .payme .location h1{font-size: 18px;float: left;font-weight:600;width: 100%;line-height: 40px;padding-left: 2%;margin-top: 10px;}
+    	.mui-content .payme .location h2{font-size: 16px;color: #565656;width: 80%;float: left;margin-left: 2%;}
+    	.mui-content .payme .location h3{font-size: 16px;color: #565656;width: 100%;padding-left: 2%;line-height: 30px;}
+    	.mui-content .payme .time{width: 100%;height: 40px;float: left;background: #fff;border: 1px #ccc solid;margin-top: 20px;}
+    	.mui-content span{float: right;font-size: 20px;color: #c7c7cc;line-height: 40px;}
+    	.mui-content p{float: right;font-size: 14px;color: #c7c7cc;line-height: 40px}
+    	.mui-content .payinfo{width: 100%;float: left;margin-top: 20px;border-top: 1px #ccc solid;}
+    	.mui-content .payinfo .payshop{width: 100%;float: left;height: 40px;background: #fff;padding-left: 2%;border-bottom: 1px #ccc solid;}
+    	.mui-content .payshop h4{float: right;font-size: 14px;color: #FF9933;line-height: 40px}
+    	.mui-content .mar{margin-top: 20px;border-top: 1px #ccc solid;}
+    	.mui-content .payImg{width: 100%;float: left;height: 120px;background: #fff;padding-left: 2%;border-bottom: 1px #ccc solid;position: relative;}
+    	.mui-content .payImg img{width: 100px;height: 100px;float: left;margin: 10px;}
+    	.mui-content .payImg h2{font-size: 16px;width:90%;position: absolute;padding-left: 120px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;top: 10px;}
+    	.mui-content .payImg h3{font-size: 14px;width:90%;position: absolute;padding-left: 120px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;top: 30px;color: #adadad;}
+    	.mui-content .payImg h4{font-size: 14px;width:90%;position: absolute;padding-left: 120px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;top: 90px;color: #FF9933;}
+    	.mui-content .payImg span{margin-top: 40px;margin-right: 10px;}
+    </style>
+</head>
+<body>
+	<div class="mui-content">
+	    <div class="payfor"><h1>选择配送目的</h1>
+			<div class="mui-switch mui-switch-mini" id="myswith">
+		    	<h1>自购</h1>
+					<div class="mui-switch-handle"><h2 id="subName">自购</h2></div>
+				<h1>送朋友</h1>
+			</div>
+		</div>
+		<div class="payme">
+			<div class="location">
+				<h1>某某某</h1>
+				<h2>贵州 贵阳市 南明区 花果园中央商务区5号204</h2>
+				<h3>15555555555</h3>
+			</div>
+			<div class="time">
+				<h1>配送时间</h1>
+				<span class="mui-icon mui-icon-forward"></span>
+				<p>请选择</p>
+			</div>
+		</div>
+		<div class="payfriend payinfo">
+			<div class="payshop"><h1>朋友姓名</h1><span class="mui-icon mui-icon-forward"></span><p>哈哈哈</p></div>
+			<div class="payshop"><h1>朋友手机号码</h1><span class="mui-icon mui-icon-forward"></span><p>15555555555</p></div>
+		</div>
+		<div class="payinfo">
+			<div class="payshop"><h1>支付方式</h1><span class="mui-icon mui-icon-forward"></span><p>微信支付</p></div>
+			<div class="payshop"><h1>优惠券</h1><span class="mui-icon mui-icon-forward"></span><p>已抵扣￥10.00</p></div>
+			<div class="payImg">
+				<img src="images/shopping1.jpg"/>
+				<h2>红霞草莓每天限量三个红霞草莓每天限量三个</h2>
+				<h3>2斤装</h3>
+				<h4>￥69.00</h4>
+				<span>x1</span>
+			</div>
+			
+			<div class="payshop mar"><h1>商品总价</h1><span class="mui-icon mui-icon-forward"></span><h4>￥10.00</h4></div>
+			<div class="payshop"><h1>运费</h1><span class="mui-icon mui-icon-forward"></span><h4>￥10.00</h4></div>
+			<div class="payshop"><h1>积分抵扣</h1><span class="mui-icon mui-icon-forward"></span><p>-￥10.00</p></div>
+			<div class="payshop"><h1>优惠券抵扣</h1><span class="mui-icon mui-icon-forward"></span><p>-￥10.00</p></div>
+		</div>
+		</div>
+	
+</body>
+</html>

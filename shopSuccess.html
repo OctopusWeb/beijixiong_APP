@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+      	window.onload = function(){
+      		document.getElementsByClassName("mui-bar")[0].getElementsByTagName("button")[0].addEventListener("tap",function(){
+      			mui.openWindow({
+	      			url:"index.html",
+	      			id:"index"
+	      		})
+      		})
+      	}
+    </script>
+    <style type="text/css">
+    	*{margin: 0;padding: 0;font-family: "微软雅黑";font-weight: 400;list-style: none;}
+    	body{background: #f6f6f6;}
+    	.mui-bar{height: 40px;box-shadow: none;bottom: 0;border-top:1px #ccc solid ;}
+    	
+    	.mui-content{padding-bottom: 50px;float: left;}
+    	.mui-content .banner{width: 100%;float: left;height: auto;background: #000;}
+    	.mui-content .banner img{float: left;width: 100%;}
+    	.mui-content .num{width: 100%;float: left;position: relative;}
+    	.mui-content h1{float: left;width: 100%;font-size: 16px;line-height: 40px;background: #fff;margin: 0;padding-left:2% ;border-bottom: 1px #ccc solid;}
+    	.mui-content h4{color: #ff9933; position: absolute;font-size: 14px;right: 10px;top: 10px;}
+    	.mui-content .num ul{width: 100%;float: left;height: 120px;background: #fff;border-bottom: 1px #ccc solid;}
+    	.mui-content .num ul li{width: 100px;height: 100px;float: left;margin: 10px;}
+    	.mui-content .num ul li img{width: 100px;height: 100px;}
+    	.mui-content .num h2{float: left;width: 100%;font-size: 16px;line-height: 40px;background: #fff;margin: 0;padding-left:2% ;
+    						border-bottom: 1px #ccc solid;text-align: right;padding-right: 70px;}
+    	.mui-content .num h3{color: #ff9933; position: absolute;font-size: 14px;right: 10px;top: 170px;}
+    	.mui-content .time{float: left;width: 100%;margin-top: 20px;border-top: 1px #ccc solid;position: relative;}
+    	.mui-content .time p,span{position: absolute;right: 10px;font-size: 14px;color: #555555;line-height: 40px;}
+    	.mui-content .time span{top: 40px;}
+    	.mui-content .info{width: 100%;float: left;background: #fff;height: 100px;margin-top: 20px;border-top: 1px #ccc solid;}
+    	.mui-content .info h2{width: 70%;margin-left: 15%;margin-top: 20px;font-size: 16px;text-align: center;color: #FF9933;line-height: 30px;}
+    	.mui-bar button{width: 140px;border-radius: 20px;height: 30px;line-height: 15px;float: left;}
+    	.mui-bar button:last-child{float: right;}
+    	
+    </style>
+</head>
+<body>
+	<div class="mui-content">
+	    <div class="banner"><img src="images/shopsuccess.jpg"/></div>
+	    <div class="num">
+	    	<h1>订单编号:151230424720</h1><h4>代发货</h4>
+	    	<ul>
+	    		<li><img src="images/shopping1.jpg"/></li>
+	    		<li><img src="images/shopping1.jpg"/></li>
+	    	</ul>
+	    	<h2>共2个商品，实付金额：</h2><h3>￥108.00</h3>
+	    </div>
+	    <div class="time">
+	    	<h1>配送时间</h1><p>2016-01-02 09:00-18:00</p>
+	    	<h1>支付方式</h1><span>支付宝</span>
+	    </div>
+	    <div class="info">
+	    	<h2>请您于30分钟内完成支付否则订单将被取消</h2>
+	    </div>
+	</div>
+	<div class="mui-bar">
+		<button type="button" class="mui-btn mui-btn-warning mui-btn-outlined">返回首页</button>
+		<button type="button" class="mui-btn mui-btn-warning">立即支付</button>
+	</div>
+</body>
+</html>

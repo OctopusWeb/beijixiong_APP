@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+      	window.onload = function(){
+      		var nav = document.getElementsByClassName("menu")[0].getElementsByTagName("li");
+ 			var indexNav = "indexNav";
+ 			for(var i=0;i<nav.length;i++){
+ 				addEvent(nav,i);
+ 			}
+ 			function addEvent(cla,i){
+ 				var indexUrl = indexNav+i;
+ 				cla[i].addEventListener("tap",function(){
+ 					mui.openWindow({
+ 						url:indexUrl+".html",
+ 						id:indexUrl
+ 					})
+ 				})
+ 			}
+      	}
+    </script>
+    <style type="text/css">
+   		 *{margin: 0;padding: 0;font-family: "微软雅黑";font-weight: 400;list-style: none;}
+		.mui-content #slider{width: 100%;float: left;height: auto;background: #000;}
+		.mui-content .menu{float: left;width: 100%;}
+		.mui-content .menu ul{float: left;width: 100%;}
+		.mui-content .menu ul li{float: left;width: 32%;margin-left: 1%;background: #eeebe8;height: 130px;margin-top: 5px;position: relative;}
+		.mui-content .menu ul li img{width: 80px;height: 80px;position: absolute;left: 50%;margin-left: -40px;margin-top: 10px;}
+    	.mui-content .menu ul li h1{width: 100%;font-size: 16px;text-align: center;float: left;margin-top: 100px;}
+    	.imgshow_100{width: 98%;float: left;margin-top: 5px;height: auto;margin-left: 1%;}
+    	.imgshow_100 img{width: 100%;float: left;height: auto;float: left;border: 1px #ccc solid;}
+    	.imgshow_33{width: 98%;float: left;margin-top: 5px;height: auto;border: 1px #ccc solid;margin-left: 1%;}
+    	.imgshow_33 img{width: 32%;margin-left: 1%;float: left;height: auto;}
+    	
+    	.imgshow_112{width: 98%;float: left;margin-left: 1%;margin-top: 5px;height: auto;border: 1px #ccc solid;position: relative;}
+    	.imgshow_112 img:first-child{width: 100%;}
+    	.imgshow_112 img{width: 60%;float: left;margin-top: 2px;}
+    	.imgshow_112 #img112_1{width: 40%;}
+    	.imgshow_112 img:last-child{position: absolute;bottom: 0;right: 0;}
+    	
+    	#top{width: 30px;height: 30px;position: fixed;bottom: 20px;z-index: 100;right: 20px;}
+    	#top img{width: 100%;height: auto;}
+
+		
+</style>
+</head>
+
+<body>
+	<div class="mui-content">
+	    <div id="slider" class="mui-slider" >
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/banner.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/idnexbg1.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/idnexbg2.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/idnexbg1.jpg">
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="images/idnexbg2.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/banner.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		
+		<div class="menu">
+			<ul>
+				<li><img src="images/icon1.jpg"/><h1>优惠券</h1></li>
+				<li><img src="images/icon2.jpg"/><h1>赠送朋友</h1></li>
+				<li><img src="images/icon3.jpg"/><h1>会员特权</h1></li>
+				<li><img src="images/icon4.jpg"/><h1>积分商城</h1></li>
+				<li><img src="images/icon5.jpg"/><h1>组合套餐</h1></li>
+				<li><img src="images/icon6.jpg"/><h1>充值有礼</h1></li>
+			</ul>
+		</div>
+		
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_33">
+			<img src="images/imgshow33.jpg"/>
+			<img src="images/imgshow33.jpg"/>
+			<img src="images/imgshow33.jpg"/>
+		</div>
+		<div class="imgshow_112">
+			<img src="images/imgshow112.jpg"/>
+			<img src="images/imgshow33.jpg" id="img112_1"/>
+			<img src="images/imgshow113.jpg"/>
+			<img src="images/imgshow113.jpg"/>
+		</div>
+		<div class="imgshow_112">
+			<img src="images/imgshow112.jpg"/>
+			<img src="images/imgshow33.jpg" id="img112_1"/>
+			<img src="images/imgshow113.jpg"/>
+			<img src="images/imgshow113.jpg"/>
+		</div>
+		<div class="imgshow_112">
+			<img src="images/imgshow112.jpg"/>
+			<img src="images/imgshow33.jpg" id="img112_1"/>
+			<img src="images/imgshow113.jpg"/>
+			<img src="images/imgshow113.jpg"/>
+		</div>
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_100"><img src="images/banner.jpg"/></div>
+		<div class="imgshow_100"><img src="images/logo.jpg"/></div>
+	<div id="top"><img src="images/top.png"/></div>
+	</div>
+</body>
+</html>

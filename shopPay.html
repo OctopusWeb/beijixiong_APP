@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init({
+      		subpages: [{
+					id: 'shopPayList',
+					url: 'shopPayList.html',
+					styles: {
+						top: '70px',
+						bottom: "50px",
+						bounce: 'vertical'
+					}
+				}]
+      	});
+      	window.onload = function(){
+      		document.getElementById("foot").getElementsByTagName("button")[0].addEventListener("tap",function(){
+      			mui.openWindow({
+	      			url:"shopSuccess.html",
+	      			id:"shopSuccess"
+	      		})
+      		})
+      		
+      	}
+    </script>
+    <style type="text/css">
+    	*{margin: 0;padding: 0;font-family: "微软雅黑";font-weight: 400;list-style: none;}
+    	body{background: #f6f6f6;}
+    	.mui-bar{height: 70px;box-shadow: none;border: 1px #ccc solid;}
+    	.mui-bar h1{top: 20px;color: #3C8C1E;}
+    	.mui-bar a{top: 20px;color: #3C8C1E;}
+    	
+    	#foot{bottom: 0;height: 50px;}
+    	#foot h2{color: #ff9933;font-size: 20px;float: left;line-height: 40px;}
+    	#foot button{float: right;width: 150px;background: #ff9933;border-radius: 15px;height: 30px;line-height: 15px;margin-top: 5px;margin-right: 10px;}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">确认订单</h1>
+	</header>
+	<div class="mui-bar" id="foot">
+		<h2>￥69.00</h2>
+		<button type="button" class="mui-btn mui-btn-warning">提交订单</button>
+	</div>
+</body>
+</html>
