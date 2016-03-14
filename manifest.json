@@ -207,7 +207,10 @@
 					"images/menu4.jpg"
 				],
 				"refer": [
-					"map.html"
+					"map.html",
+					"indexCity.html",
+					"classes.html",
+					"mine.html"
 				],
 				"priority": 0
 			},
@@ -223,9 +226,18 @@
 					"images/imgshow112.jpg",
 					"images/top.png",
 					"images/imgshow33.jpg",
-					"images/icon5.jpg"
+					"images/icon5.jpg",
+					"images/idnexbg2.jpg",
+					"images/logo.jpg",
+					"images/idnexbg1.jpg"
 				],
-				"refer": [],
+				"refer": [
+					"indexNav0.html",
+					"indexNav2.html",
+					"indexNav3.html",
+					"indexNav4.html",
+					"indexNav5.html"
+				],
 				"priority": 0
 			},
 			"map.html": {
@@ -234,14 +246,202 @@
 				],
 				"refer": [],
 				"priority": 0
+			},
+			"indexCity.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"indexNav0.html": {
+				"resources": [
+					"images/outtime.jpg",
+					"images/ontime.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"indexNav2.html": {
+				"resources": [
+					"images/friend.jpg",
+					"images/lv0.png",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"indexNav3.html": {
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"images/indexNav3.jpg",
+					"images/shopping1.jpg",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"indexNav4.html": {
+				"resources": [
+					"images/start.jpg",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"images/indexNav4.jpg",
+					"images/shopping1.jpg",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"indexNav5.html": {
+				"resources": [
+					"images/lihe.jpg",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"images/imgshow33.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"classesInfo.html": {
+				"resources": [
+					"images/shopCar.jpg",
+					"classesinfoList.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"classes.html": {
+				"resources": [
+					"images/menu3.jpg",
+					"images/menu1.jpg",
+					"images/call.jpg",
+					"js/mui.min.js",
+					"classesList.html",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"images/menu2.jpg",
+					"images/menu4.jpg"
+				],
+				"refer": [
+					"shopCar.html"
+				],
+				"priority": 0
+			},
+			"classesList.html": {
+				"resources": [
+					"images/classesgo1.jpg",
+					"images/classesgo.jpg",
+					"js/mui.js"
+				],
+				"refer": [
+					"classesInfo.html"
+				],
+				"priority": 0
+			},
+			"classesinfoList.html": {
+				"resources": [
+					"images/shopAdd.jpg",
+					"images/shopping1.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"shopCarList.html": {
+				"resources": [
+					"fonts/mui.ttf",
+					"images/shopping1.jpg",
+					"images/changed.jpg"
+				],
+				"refer": [
+					"shopPay.html"
+				],
+				"priority": 0
+			},
+			"shopCar.html": {
+				"resources": [
+					"images/menu3.jpg",
+					"images/menu1.jpg",
+					"images/call.jpg",
+					"js/mui.min.js",
+					"shopCarList.html",
+					"css/mui.min.css",
+					"images/menu2.jpg",
+					"images/menu4.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"shopPay.html": {
+				"resources": [
+					"shopPayList.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"shopSuccess.html"
+				],
+				"priority": 0
+			},
+			"shopPayList.html": {
+				"resources": [
+					"images/location.jpg",
+					"images/shopping1.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"shopSuccess.html": {
+				"resources": [
+					"images/shopsuccess.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"mine.html": {
+				"resources": [
+					"images/menu3.jpg",
+					"images/menu1.jpg",
+					"images/call.jpg",
+					"images/menu2.jpg",
+					"images/menu4.jpg",
+					"mineList.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"mineList.html": {
+				"resources": [
+					"images/lv0.png",
+					"images/mineIcon6.png",
+					"images/mineIcon5.png",
+					"images/mineIcon1.png",
+					"images/mineHead.png",
+					"images/mineIcon2.png",
+					"images/mineBg.jpg",
+					"images/mineIcon3.png",
+					"images/mineIcon4.png"
+				],
+				"refer": [],
+				"priority": 0
 			}
 		},
 		"idle": {
 			"resources": [
 				"images/call_box.jpg",
-				"indexCity.html",
 				"images/call.png",
-				"js/mui.js",
 				"css/mui.css"
 			]
 		}

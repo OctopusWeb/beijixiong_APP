@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+    <style type="text/css">
+    	*{margin: 0;padding: 0;font-family: "微软雅黑";font-weight: 400;list-style: none;}
+    	.mui-bar{height: 70px;box-shadow: none;border-bottom:1px #ccc solid ;}
+    	.mui-bar h1,a{top: 20px;color: #3c8c1e;}
+    	
+    	.mui-content{width: 100%;float: left;margin-top: 50px;}
+		.mui-content .content1{width: 90%;float: left;margin-left: 5%;background: #3b3b3b;border-top-left-radius: 10px;border-top-right-radius: 10px;}
+		.mui-content .content1 img{width: 96%;margin-left: 2%;}
+		.mui-content .content2{width: 90%;float: left;margin-left: 5%;background: #fff;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;border: 1px #ccc solid;
+								border-top: none;margin-top: -5px;}
+		.mui-content .content2  h1{font-size: 16px;width: 20%;float: left;text-align: center;height: 30px;line-height: 30px;margin-top: 20px;margin-left: 5%;}
+		.mui-content .content2 input{width: 55%;height: 30px;margin-top: 20px;float: left;font-size: 14px;margin-left: 5%;}
+		.mui-content .content2 img{width: 10%;float: left;margin-top: 20px;margin-left: 5%;}
+		.mui-content .content2 button{width: 40%;float: left;margin-left: 35%;margin-bottom: 20px;background: #ff9933;}
+		.mui-content .content3{width: 84%;margin-left: 8%;background: #f2ca10;float: left;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
+		.mui-content .content3 p{color: #fff;width: 100%;text-align: center;line-height: 14px;margin-bottom:30px ;}
+		.mui-content .content3 p:first-child{margin-top: 30px;margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">填写收货信息</h1>
+	</header>
+	<div class="mui-content">
+	    <div class="content1"><img src="images/content2.jpg"/></div>
+	    <div class="content2">
+	    	<h1>验证码</h1>
+	    	<input type="text" />
+	    	<h1>区域选择</h1>
+	    	<input type="text" />
+	    	<h1>详细地址</h1>
+	    	<input type="text" />
+	    	<h1>电话号码</h1>
+	    	<input type="text" />
+	    	<button type="button" class="mui-btn mui-btn-warning">提交信息</button>
+	    	
+	    </div>
+	    <div class="content3">
+	    	<p>只要带着深情爱意</p>
+	    	<p>薄礼也要胜千斤</p>
+	    </div>
+	</div>
+</body>
+</html>

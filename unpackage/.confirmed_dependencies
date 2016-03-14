@@ -1,39 +1,224 @@
 {
-  "index.html": {
-    "resources": [
-      "images/menu3.jpg",
-      "images/menu1.jpg",
-      "images/call.jpg",
-      "js/mui.min.js",
-      "fonts/mui.ttf",
-      "indexList.html",
-      "css/mui.min.css",
-      "images/menu2.jpg",
-      "images/menu4.jpg"
-    ],
-    "refer": [
-      "indexList.html",
-      "map.html"
-    ]
-  },
-  "indexList.html": {
-    "resources": [
-      "images/icon3.jpg",
-      "images/banner.jpg",
-      "images/icon4.jpg",
-      "images/icon6.jpg",
-      "images/icon2.jpg",
-      "images/icon1.jpg",
-      "images/imgshow113.jpg",
-      "images/imgshow112.jpg",
-      "images/top.png",
-      "images/imgshow33.jpg",
-      "images/icon5.jpg"
-    ]
-  },
-  "map.html": {
-    "resources": [
-      "images/nearicon.jpg"
-    ]
-  }
+	"index.html": {
+		"resources": [
+			"images/menu3.jpg",
+			"images/menu1.jpg",
+			"images/call.jpg",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"indexList.html",
+			"css/mui.min.css",
+			"images/menu2.jpg",
+			"images/menu4.jpg"
+		],
+		"refer": [
+			"indexList.html",
+			"map.html",
+			"indexCity.html",
+			"classes.html",
+			"mine.html"
+		]
+	},
+	"indexList.html": {
+		"resources": [
+			"images/icon3.jpg",
+			"images/banner.jpg",
+			"images/icon4.jpg",
+			"images/icon6.jpg",
+			"images/icon2.jpg",
+			"images/icon1.jpg",
+			"images/imgshow113.jpg",
+			"images/imgshow112.jpg",
+			"images/top.png",
+			"images/imgshow33.jpg",
+			"images/icon5.jpg",
+			"images/idnexbg2.jpg",
+			"images/logo.jpg",
+			"images/idnexbg1.jpg"
+		],
+		"refer": [
+			"indexNav0.html",
+			"indexNav2.html",
+			"indexNav3.html",
+			"indexNav4.html",
+			"indexNav5.html"
+		]
+	},
+	"map.html": {
+		"resources": [
+			"images/nearicon.jpg"
+		]
+	},
+	"indexCity.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"indexNav0.html": {
+		"resources": [
+			"images/outtime.jpg",
+			"images/ontime.jpg"
+		]
+	},
+	"indexNav2.html": {
+		"resources": [
+			"images/friend.jpg",
+			"images/lv0.png",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		]
+	},
+	"indexNav3.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"images/indexNav3.jpg",
+			"images/shopping1.jpg",
+			"fonts/mui.ttf"
+		]
+	},
+	"indexNav4.html": {
+		"resources": [
+			"images/start.jpg",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"images/indexNav4.jpg",
+			"images/shopping1.jpg",
+			"fonts/mui.ttf"
+		]
+	},
+	"indexNav5.html": {
+		"resources": [
+			"images/lihe.jpg",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"images/imgshow33.jpg"
+		]
+	},
+	"classesInfo.html": {
+		"resources": [
+			"images/shopCar.jpg",
+			"classesinfoList.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"classesinfoList.html"
+		]
+	},
+	"classes.html": {
+		"resources": [
+			"images/menu3.jpg",
+			"images/menu1.jpg",
+			"images/call.jpg",
+			"js/mui.min.js",
+			"classesList.html",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"images/menu2.jpg",
+			"images/menu4.jpg"
+		],
+		"refer": [
+			"classesList.html",
+			"shopCar.html"
+		]
+	},
+	"classesList.html": {
+		"resources": [
+			"images/classesgo1.jpg",
+			"images/classesgo.jpg",
+			"js/mui.js"
+		],
+		"refer": [
+			"classesInfo.html"
+		]
+	},
+	"classesinfoList.html": {
+		"resources": [
+			"images/shopAdd.jpg",
+			"images/shopping1.jpg"
+		]
+	},
+	"shopCarList.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"images/shopping1.jpg",
+			"images/changed.jpg"
+		],
+		"refer": [
+			"shopPay.html"
+		]
+	},
+	"shopCar.html": {
+		"resources": [
+			"images/menu3.jpg",
+			"images/menu1.jpg",
+			"images/call.jpg",
+			"js/mui.min.js",
+			"shopCarList.html",
+			"css/mui.min.css",
+			"images/menu2.jpg",
+			"images/menu4.jpg"
+		],
+		"refer": [
+			"shopCarList.html"
+		]
+	},
+	"shopPay.html": {
+		"resources": [
+			"shopPayList.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"shopPayList.html",
+			"shopSuccess.html"
+		]
+	},
+	"shopPayList.html": {
+		"resources": [
+			"images/location.jpg",
+			"images/shopping1.jpg"
+		]
+	},
+	"shopSuccess.html": {
+		"resources": [
+			"images/shopsuccess.jpg"
+		]
+	},
+	"mine.html": {
+		"resources": [
+			"images/menu3.jpg",
+			"images/menu1.jpg",
+			"images/call.jpg",
+			"images/menu2.jpg",
+			"images/menu4.jpg",
+			"mineList.html"
+		],
+		"refer": [
+			"mineList.html"
+		]
+	},
+	"mineList.html": {
+		"resources": [
+			"images/lv0.png",
+			"images/mineIcon6.png",
+			"images/mineIcon5.png",
+			"images/mineIcon1.png",
+			"images/mineHead.png",
+			"images/mineIcon2.png",
+			"images/mineBg.jpg",
+			"images/mineIcon3.png",
+			"images/mineIcon4.png"
+		]
+	}
 }
